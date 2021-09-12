@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Budget Manager",
+  "version": "1.5.0",
+  "description": "A budget manager extension to track your expences.",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "browser_action": {
+    "default": "icon16.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": [
+      "event-page.js",
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "storage",
+    "notifications",
+    "contextMenus"
+  ],
+  "options_page": "options.html"
+}
